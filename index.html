@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="design.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- <div class="main-body" style="max-width:100%;"> -->
+        <div class="main-header">
+            <a class="ahead" href=""><h1 class="fontfamily"> Free shipping on order over $70 <i class="fa-solid fa-arrow-right fa-xs" style="color: #f5f5f5;"></i> </h1></a>           
+        </div>
+        
+        <div class="nav-div">
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars fa-xl" style="color: #080808;"></i></div> <!--add menu icon-->
+            <div class="imgg">
+                <img src="\photos\icon desin.avif" alt="" class="imgtag">
+            </div> 
+            <ul class="menu-list">
+                <li><a href="#" class="menu-item">Shop by Type</a></li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>         
+                <li><a href="#" class="menu-item">Shop by Need</a></li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <li><a href="#" class="menu-item">About Us</a></li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>      
+                <li><a href="#" class="menu-item">Cleaning Services</a></li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </ul>
+                 
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+                </svg>
+            </div>            
+        </div>  
+
+
+
+        <div class="bfirst">
+            <div class="part1">
+                <div class="part11">
+                    <p>15% off Lavender Collection.Use code Lavender 15</p>
+                    <h1>Elevate Mother's Day with a touch of Lavender</h1>
+                    <a href="#"><button class="btn btn-hover-class">SHOP PRODUCTS</button></a>
+                </div>
+            </div>
+            <div class="part2">
+                <img src="\photos\product3.jpg" alt="" class="image">
+            </div>
+        </div>
+         
+
+
+        <div class="bsecond">
+            <div class="bdyhead2"><h2>Natural Cleaner,Soaps and Laundry Detergents</h2></div>
+            <div class="prdct-list">
+                <div class="product">
+                    <img src="\photos\product1.jpg" alt="" class="prdctimg">
+                    <p>Best Eco-Friendly Laundry Detergents,Natural & Green  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p> 
+                </div>
+                
+                <div class="product">
+                    <img src="\photos\product2.jpeg" alt="" class="prdctimg">
+                    <p>Eco-Friendly Natural Dish Soap & Pods  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+
+                <div class="product">
+                    <img src="/photos\product6.jpg" alt="" class="prdctimg">
+                    <p>Natural Cleaning Kits  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+
+                <div class="product">
+                    <img src="\photos\product4.jpg" alt="" class="prdctimg">
+                    <p>Natural Spray & Concentrate Cleaning Supplies  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+
+                <div class="product">
+                    <img src="\photos\product5.jpg" alt="" class="prdctimg">
+                    <p>Best Eco-Friendly Microfiber Clening Cloths  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+            </div>
+
+            <!--this section only show after 990 screen size-->
+            <div class="prdct-list-screen990">
+                <div class="product">
+                    <img src="\photos\product1.jpg" alt="" class="prdctimg">
+                    <p>Best Eco-Friendly Laundry Detergents,Natural & Green  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p> 
+                </div>
+                
+                <div class="product">
+                    <img src="\photos\product2.jpeg" alt="" class="prdctimg">
+                    <p>Eco-Friendly Natural Dish Soap & Pods  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+
+                <div class="product">
+                    <img src="/photos\product6.jpg" alt="" class="prdctimg">
+                    <p>Natural Cleaning Kits  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+
+                <div class="product">
+                    <img src="\photos\product4.jpg" alt="" class="prdctimg">
+                    <p>Natural Spray & Concentrate Cleaning Supplies  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+
+                <div class="product">
+                    <img src="\photos\product5.jpg" alt="" class="prdctimg">
+                    <p>Best Eco-Friendly Microfiber Clening Cloths  <i class="fa-solid fa-arrow-right fa-xs" style="color: #050505;"></i></p>
+                </div>
+            </div>
+            <!--this section only show after 990 screen size-->
+
+
+
+           <div class="pbtn-div">
+            <a href="#"><button class="pbtn">View All</button></a>
+           </div>
+        </div>  
+        
+
+        <div class="bfooter">
+            <h3>Featured in</h3>
+            <div class="flogos"> 
+                <div><img src="\photos\featured-in-logos-11.png" alt="" class="fimg"></div>
+                <div><img src="\photos\featured-in-logos-22.png" alt="" class="fimg"></div>
+                <div><img src="\photos\featured-in-logos-33.png" alt="" class="fimg"></div>
+            </div>
+        </div>
+
+        <!--this section show only 990 screen-->
+        <div class="bfooter-screen990">
+            <div class="bfooter-screen990-h3"><h3>Featured in</h3></div>
+            <div class="flogos-screen990"> 
+                <div><img src="\photos\featured-in-logos-11.png" alt="" class="fimg"></div>
+                <div><img src="\photos\featured-in-logos-22.png" alt="" class="fimg"></div>
+                <div><img src="\photos\featured-in-logos-33.png" alt="" class="fimg"></div>
+            </div>
+        </div>
+        <!--this section show only 990 screen-->
+
+
+        <div class="bthird">
+            <div class="bthird-head"><h3>Best Eco-Friendly Detergent & Dish Soap</h3></div>
+            <div class="second-product-collection"> 
+                <div class="second-product-list"><img src="\photos\product7.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <P class="second-product-listp3">$18.99</P>
+                    <a href="#"><button class="sbtn">Add to cart</button></a>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product8.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">AspenClean Unscented Laundry Detergent Natural, Organic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <P class="second-product-listp3">$28.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product11.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">AspenClean Oxygen Bleach Powder and Stain Remover</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <P class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product10.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">AspenClean House Cleaning Kit with Scouring Powder</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <P class="second-product-listp3">$78.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                 <div class="second-product-list"><img src="\photos\product11.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods <br>Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <p class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+               <div class="second-product-list"><img src="\photos\product12.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <p class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product13.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <p class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product14.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <p class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product15.png" alt="" class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <p class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <div class="second-product-list"><img src="\photos\product16.png" alt=""class="second-prdctimg">
+                    <p class="second-product-listp1">Aspen Clean Dishwasher Pods Eco-friendly,Natural.Non-toxic</p>
+                    <p class="second-product-listp2">ASPENCLEAN</p>
+                    <p class="second-product-listp3">$18.99</P>
+                    <button class="sbtn">Add to cart</button>
+                </div>
+
+                <!--this section show only 990 screen-->
+
+               <!--this section show only 990 screen-->
+
+            </div>
+        </div>
+
+
+
+        <div class="bfourth">
+            <div class="bfourth-left-part">
+                <img class="bfourth-left-part-img" src="\photos\family-dinner-kitchen-cleaner-aspenclean.jpg" alt="">
+            </div>
+
+            <div class="bfourth-right-part">
+                <div class="bfourth-right-part-content">
+                    <p>ECO-FRIENDLY CLEANING PRODUCTS</p>
+                    <h1>Safe for you and your family</h1>
+                    <p>At AspenClean,we take your safety and healthy seriously,and that's why our cleaning products are:</p>
+                    <ul>
+                     <li>100% Eco-Friendly</li>
+                     <li>Non-Toxic</li>
+                     <li>Made with Plant-Based incredients</li>
+                     <li>Hypoallergenic</li>
+                     <li>Free from carcinogenic incredients</li>
+                     <li>Good for you and for the planet</li>
+                    </ul>
+                    <p>We prioritize providing environmentally conscious and safe cleaning solution for a healthier home and a better planet</p>
+                    <a href=""><button class="bfourth-right-part-content-btn">DISCOVER OUR PRODUCTS</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bfifth"> 
+            <div class="bfifth-part1-vedio">
+                <h2>Wash Green.Not Greenwash.</h2>
+                <iframe class="bfifth-part1-vedio-screen990" width="100%" height="680" src="https://www.youtube.com/embed/l16RsMHBQXA?enablejsapi=1&autoplay=1&loop=1&playlist=l16RsMHBQXA" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="bfifth-part2-logos">
+                <h2>What we take pride in</h2>
+                <div class="bfifth-part2-logos-parent">
+                    <div> <img src="\photos\body-logo2.png" alt="" class="bfifth-part2-logos-img"></div>
+                    <div><img src="\photos\body logo3.png" alt="" class="bfifth-part2-logos-img"></div>
+                </div>
+                
+                <!--this section show only 990 screen-->
+                <div class="bfifth-part2-logos-parent-screen990">
+                    <div> <img src="\photos\body-logo2.png" alt="" class="bfifth-part2-logos-img"></div>
+                    <div><img src="\photos\body logo3.png" alt="" class="bfifth-part2-logos-img"></div>
+                </div>
+                <!--this section show only 990 screen-->
+
+            </div>
+        </div>
+
+
+        <div class="bsixth">
+            <div class="bsixth-left-part">
+                <div class="sixth-left-part-content">
+                    <h1>High- performance Green Cleaning with Heart</h1>
+                    <p>Established in 2004,AspenClean pioneered the art of a healthy home with our green cleaners and natural home cleaning services.From formulation to packaging,learn about the dynamic duo who started it all.</p>
+                    <button class="bsixth-left-part-btn">OUR STORY</button>
+                </div>
+            </div>
+            <div class="bsixth-right-part">
+                <img src="\photos\sixth body image.jpg" alt="" class="bsixth-right-part-img">
+            </div>
+        </div>
+
+
+        <div class="bseventh">
+            <h2>What they say about us</h2>
+            <div class="bseventh-parent">
+                <div class="bseventh-img-class"><img src="\photos\seventh body image1.jpg" alt="" class="bseventh-img"></div>
+                <div class="bseventh-img-class"><img src="\photos\seventh body image2.jpg" alt="" class="bseventh-img"></div>
+                <div class="bseventh-img-class"><img src="\photos\seventh body image3.jpg" alt="" class="bseventh-img"></div>
+            </div>
+            <div class="bseventh-btn-div"><button class="bseventh-btn">READ MORE</button></div>
+        </div>
+
+
+        <div class="beigth">
+            <h2>Discover our premium House Cleaning Services</h2>
+            <div class="beigth-body">
+              <div class="beigth-left-part">
+                <img src="\photos\eigth body img.jpg" alt="">
+              </div>
+              <div class="beigth-right-part">
+                <div class="beigth-right-part-content">
+                    <h3>AspenClean cleaning Services</h3>
+                    <p class="beigth-right-part-content-p-ul">Our fully-trined,professional <a href="#">cleaning services</a> teams will help create a sparkling clean home,the AspenClean Way.We are a premier cleaning company that offer <a href="#">cleaning service in Vancouver,Calgary cleaning services </a> and also our <a href="#">cleaning service in Toronto </a>.At AspenClean We believe a clean home or workplace doesn't require herming the environment.Our professional cleaning services in the above areas include: </p>
+                    <ul class="beigth-right-part-content-p-ul">
+                        <li> <a href="#">House cleaning services</a></li>
+                        <li> <a href="#">Apartment and condo cleaning services</a></li>
+                        <li> <a href="#">Move in move out cleaning services</a></li>
+                        <li>Regular house clening and maid services</li>
+                        <li>Office cleaning services</li>
+                        <li>Airnb cleaning services</li>
+                        <li>Carpet cleaning services</li>
+                        <li><a href="#">Post-construction cleaning services</a></li>
+                    </ul>
+                    <div class="beigth-right-part-content-btn-div"><button class="beigth-right-part-content-btn"> BOOK A CLEANING SERVICE</button></div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="bninth">
+            <h2>Learn more on our blog</h2>
+            <div class="bninth-parent">
+                <div class="bninth-parent-div">
+                    <img src="\photos\body ninth img1.jpg" alt="" class="bninth-parent-img">
+                    <h2>10 Most Common Laundry Question</h2>
+                    <p class="bninth-parent-div-p1">NOVEMBER 6,2023</p>
+                    <p class="bninth-parent-div-p2">You have laundry question,we have answer!Several years ago,we decided that there needed to be a better product for cleaning clothes.Something that didn't use potentially harmful chemicals...</p>
+                </div>
+
+                <div class="bninth-parent-div">
+                    <img src="\photos\body ninth img2.jpg" alt="" class="bninth-parent-img">
+                    <h2>What is Oxygen Bleach and How To Use It?</h2>
+                    <p class="bninth-parent-div-p1">SEPTEMBER 19,2023</p>
+                    <p class="bninth-parent-div-p2">Not all bleach is created equally What first comes to mind if you were asked to think about bleach? is it the caustic odour,stained splashes on clothing,or a...</p>
+                </div>
+
+                <div class="bninth-parent-div">
+                    <img src="\photos\body ninth img3.jpg" alt="" class="bninth-parent-img">
+                    <h2>Laundry Pods vs Liquid Detergent</h2>
+                    <p class="bninth-parent-div-p1">OCTOBER 21,2022</p>
+                    <p class="bninth-parent-div-p2">Not all dirt and grime is created equally.Anyone who has ever tackled a blood stain knows that ice works great at removing blood but it's not going to work..</p>
+                </div>
+            </div>
+
+             <!--this section show only 990 screen-->
+            <div class="bninth-parent-screen990">
+                <div class="bninth-parent-div-screen990">
+                    <img src="\photos\body ninth img1.jpg" alt="" class="bninth-parent-img">
+                    <h2>10 Most Common Laundry Question</h2>
+                    <p class="bninth-parent-div-p1">NOVEMBER 6,2023</p>
+                    <p class="bninth-parent-div-p2">You have laundry question,we have answer!Several years ago,we decided that there needed to be a better product for cleaning clothes.Something that didn't use potentially harmful chemicals...</p>
+                </div>
+
+                <div class="bninth-parent-div-screen990">
+                    <img src="\photos\body ninth img2.jpg" alt="" class="bninth-parent-img">
+                    <h2>What is Oxygen Bleach and How To Use It?</h2>
+                    <p class="bninth-parent-div-p1">SEPTEMBER 19,2023</p>
+                    <p class="bninth-parent-div-p2">Not all bleach is created equally What first comes to mind if you were asked to think about bleach? is it the caustic odour,stained splashes on clothing,or a...</p>
+                </div>
+
+                <div class="bninth-parent-div-screen990">
+                    <img src="\photos\body ninth img3.jpg" alt="" class="bninth-parent-img">
+                    <h2>Laundry Pods vs Liquid Detergent</h2>
+                    <p class="bninth-parent-div-p1">OCTOBER 21,2022</p>
+                    <p class="bninth-parent-div-p2">Not all dirt and grime is created equally.Anyone who has ever tackled a blood stain knows that ice works great at removing blood but it's not going to work..</p>
+                </div>
+            </div>
+            <!--this section show only 990 screen-->
+            <div class="bninth-btn-div"><button class="bninth-btn">View all</button></div>
+        </div>
+
+
+
+        <div class="bfinal">
+            <div class="bfinal-part1">
+                <div class="bfinal-part1-parent">
+                    <div class="bfinal-part1-div">
+                        <h3>PRODUCTS</h3>
+                        <ul>
+                            <li><a href="#">Laundry Detergent</a></li>
+                            <li><a href="#">Dish Dtergents & Soaps</a></li>
+                            <li><a href="#">All Purpose cleaners</a></li>
+                            <li><a href="#">Microfiber Cloths</a></li>
+                            <li><a href="#">Cleaning Kits</a></li>
+                            <li><a href="#">Plastic-free Detergents</a></li>
+                            <li><a href="#">Cleaning Products-All</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bfinal-part1-div">
+                        <h3>CLEANING SERVICES</h3>
+                        <ul>
+                            <li><a href="#">Vancouver House Cleaning Services</a></li>
+                            <li><a href="#">Calgary House Cleaning Services</a></li>
+                            <li><a href="#">Toronto House Cleaning Services</a></li>
+                            <li><a href="#">Cleaning Services</a></li>
+                            <li><a href="#">Cleaning Services FAQ</a></li>
+                            <li><a href="#">Cleaning  jobs</a></li>
+                            <li><a href="#">Terms of Cleaning Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bfinal-part1-div">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">EWG VERIFIED</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Media Enquiries</a></li>
+                            <li><a href="#">Refer a Friend</a></li>
+                            <li><a href="#">Giveaways</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bfinal-part1-div">
+                        <h3>NEED HELP?</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Sustainable Living</a></li>
+                            <li><a href="#">Cleaning Tips</a></li>
+                            <li><a href="#">Checklists & Schedules</a></li>
+                            <li><a href="#">Laundry Detergents How-To's</a></li>
+                            <li><a href="#">Products How-To's</a></li>
+                            <li><a href="#">Contacts us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="bfinal-part1-logoicon">
+                    <ul>
+                        <li><a href="https://facebook.com/aspenclean"><i class="fa-brands fa-facebook fa-lg" style="color: #080808;" ></i></a></li>
+                        <li><a href="https://instagram.com/aspenclean"><i class="fa-brands fa-instagram fa-lg" style="color: #050505;"></i> </a></li>
+                        <li><a href="https://youtube.com/@AspenClean"><i class="fa-brands fa-youtube fa-lg" style="color: #050505;"></i></a></li>
+                        <li><a href="https://tiktok.com/@aspenclean"><i class="fa-brands fa-tiktok fa-lg" style="color: #0c0d0d;"></i> </a></li>
+                        <li><a href="https://twitter.com/aspenclean"><i class="fa-brands fa-twitter fa-lg" style="color: #080808;"></i> </a></li>
+                        <li><a href="https://pinterest.com/aspenclean"><i class="fa-brands fa-pinterest fa-lg" style="color: #0a0a0a;"></i> </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="bfinal-part2">
+                <p>Country/region</p>
+                <button class="bfinal-part2-btn">United States|USD $ <i class="fa-solid fa-chevron-down fa-sm" style="color: #080808;"></i></button>
+                 <ul class="bfinal-part2-ul">
+                    <!-- <li class="bfinal-part2-li">Canada</li>
+                    <li class="bfinal-part2-li">United States</li> -->
+                 </ul>
+            </div>
+            <div class="bfinal-part2-footer">
+                    <ul>
+                        <li>© 2024,</li>
+                        <li><a href="#">AspenClean </a></li>
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of service</a></li> 
+                        <li><a href="#">Shipping policy</a></li>
+                        <li><a href="#">Contact information</a></li>
+                        <li><a href="#">Subscription policy</a></li>
+                    </ul>
+            </div>
+        </div>
+
+    <!-- </div> -->
+</body>
+</html>
