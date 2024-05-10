@@ -2,6 +2,9 @@
 padding: 0;
 box-sizing: border-box;
 }
+.main-body{
+    overflow-x: hidden;
+}
 .main-header{
     background-color :rgb(20, 148, 92);
     height: 24px;
@@ -760,6 +763,11 @@ box-sizing: border-box;
 
 
 @media(max-width:769px){
+    .slick-track{
+        width: 100%;
+
+        /* overfow-x: hidden; */
+    } 
     .prdct-list-screen990{
         display: flex;
         /* padding: 19px; */
@@ -900,6 +908,10 @@ box-sizing: border-box;
     }
 }
 @media(max-width:426px){
+    /* .second-product-collection{
+        overflow-x: hidden;
+
+    } */
     .bfirst{
         display: flex;
         flex-direction: column;
@@ -914,11 +926,11 @@ box-sizing: border-box;
         font-size: 12px;
     }
     .btn{
-          background-color: rgb(51, 144, 100);
-          padding: 7px 13px;
-          border: none;
-          font-family:sans-serif;
-          color: white;     
+        background-color: rgb(51, 144, 100);
+        padding: 7px 13px;
+        border: none;
+        font-family:sans-serif;
+        color: white;     
     }
     .image{
         width: 100%;
