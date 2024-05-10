@@ -68,6 +68,9 @@ box-sizing: border-box;
     /* padding: 50px; */
     
 }
+.menu-icon{
+    display: none;
+}
 .menu-item-view{
     display: none;
 
@@ -716,6 +719,9 @@ box-sizing: border-box;
         justify-content:space-around;
         justify-content: space-between;
         /* max-height: 130px; */
+    }
+    .menu-icon{
+        display: block;
     }
     .menu-list{                          /*hide that ul list*/
         display: none;
