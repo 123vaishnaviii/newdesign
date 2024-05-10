@@ -79,7 +79,7 @@ box-sizing: border-box;
 .part1{
     display: flex;
     justify-content: space-evenly;
-    background-image: url(/photos/cream-bg.jpg);
+    background-image: url(cream-bg.jpg);
     /* float: left;*/
     /* width: 50%; */
     /* height: 570px; */ 
