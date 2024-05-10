@@ -36,10 +36,7 @@ box-sizing: border-box;
     /* justify-content: space-around; */
     max-height: 130px;
  }
- .menu-icon{
-    display: none;
 
- }
  .imgg{
     width: 110px;
     display: flex;
@@ -71,9 +68,13 @@ box-sizing: border-box;
     /* padding: 50px; */
     
 }
+.menu-item-view{
+    display: none;
+
+}
 .bfirst{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     height: 570px;
 }
 .part1{
@@ -96,12 +97,13 @@ box-sizing: border-box;
     height: 570px;
 }
 .part11{
+    /* background-color: yellow; */
     padding: 50px;
     font-family:sans-serif;
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items:flex-start */
     /* margin-left: 92px; */
     /* margin-top: 200px; */
@@ -173,8 +175,8 @@ box-sizing: border-box;
     /* margin-left: 650px; */
 }
 .bfooter{
-    background-color:rgb(206, 238, 230);
-    height: 140px;
+    background-color:rgb(188, 236, 205);
+    /* height: 140px; */
     margin-top: 40px;
     width: 100%;
 
@@ -196,12 +198,12 @@ box-sizing: border-box;
 .flogos{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .fimg{
     width: 100%;
-    /* height: 50px; */
-    background-color: rgb(206, 238, 230);
+    height: 100px;
+    background-color:rgb(188, 236, 205);
 }
 
 
@@ -275,6 +277,9 @@ box-sizing: border-box;
 .bfourth-left-part-img{
     width: 100%; 
     height: 580px;
+}
+.bfourth-right-part-content{
+    padding-left: 20px;
 }
 
 .bfourth-right-part-content p{
@@ -712,17 +717,42 @@ box-sizing: border-box;
         justify-content: space-between;
         /* max-height: 130px; */
     }
-    .menu-icon{                         /*show that menu bar*/
-        display: block;
-    }
     .menu-list{                          /*hide that ul list*/
+        display: none;
+    }
+    .menu-item-list{
+        font-family: sans-serif;
+        font-size: 17px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        background:none;
+        padding: 14px;
+    }
+    .menu-item-view{
+        left: -400PX;
+        background-color: white;
+        position: absolute;
+        z-index: 1;
+        width: 400px;
+        height: 500px;
         display: block;
+        /* display: flex; */
+        /* flex-direction: row; */
+    }
+    .bfinal-part1-logoicon{
+        margin-top: 200px;
+        background-color:rgb(242, 239, 239)
+        
+
+
     }
     .imgg{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
-
     .prdct-list{
         display: flex;
         justify-content: space-between;
@@ -758,6 +788,10 @@ box-sizing: border-box;
         width: 100%; 
         height: 600px;
     }
+    .bfifth{
+        margin-top: 80px;
+
+    }
 }
 
 
@@ -780,8 +814,8 @@ box-sizing: border-box;
         display:none;
     }
     .bfooter-screen990{
-        background-color:rgb(206, 238, 230);
-        height: 170px;
+        background-color:rgb(188, 236, 205);
+        /* height: 170px; */
         width: 100%;
         display:block;
     }
@@ -812,7 +846,8 @@ box-sizing: border-box;
         height: 400px;
     }
     .bfifth{
-        height: 780px;  
+        margin-top: 60px;
+        /* height: 780px;   */
         
     }
     .bfifth-part2-logos-parent{
@@ -909,13 +944,15 @@ box-sizing: border-box;
 @media(max-width:426px){
     /* .second-product-collection{
         overflow-x: hidden;
-
     } */
     .bfirst{
         display: flex;
         flex-direction: column;
         /* justify-content: space-evenly; */
         /* height: 570px; */
+    }
+    .part1{
+        height: 250px;
     }
     .part11 h1{
         font-size: 24px;
@@ -1011,7 +1048,8 @@ box-sizing: border-box;
         height: 250px;
     }
     .bfifth{
-        height: 550px;  
+        margin-top: 10px;
+        height: 550px; 
         
     }
     .bsixth{

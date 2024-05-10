@@ -198,15 +198,17 @@
         ]
         
             });
+            $(".menu-icon").click(function () {
+              var div = $('.menu-item-view');
+              div.animate({  left: div.css('left') === '0px' ? '-450px' : '0px'
+            }, "");
+            });
         })
 
+        
 
 
 
 
-        function toggleMenu() {
-            var menus = document.querySelectorAll('.menu-list');
-            for (var i = 0; i < menus.length; i++) {
-              menus[i].style.display = (menus[i].style.display === 'block') ? 'none' : 'block';
-            }
-          }
+
+        
