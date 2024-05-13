@@ -203,7 +203,7 @@
         $(document).ready(function(){
             $('.bninth-parent-screen990').slick({
                 infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite:true,
         // autoplay:true,
@@ -226,8 +226,8 @@
           {
               breakpoint: 768,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 4,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
               }
@@ -235,7 +235,7 @@
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           },
@@ -263,6 +263,47 @@
               div.animate({  left: div.css('left') === '0px' ? '-450px' : '0px'
             }, "");
             });
+
+
+            $(document).ready(function() {
+              // Hide the div when the page loads
+              $('.navigation-menu-show').hide();
+
+            $('.menu-item1').click(function () {
+              $('.navigation-menu-show').slideToggle("");
+            });
+          });
+
+
+            $(document).ready(function() {
+              // Hide the div when the page loads
+              $('.navigation-menu-show2').hide();
+
+            $('.menu-item2').click(function () {
+              $('.navigation-menu-show2').slideToggle("");
+            });
+            });
+
+
+            $(document).ready(function() {
+              // Hide the div when the page loads
+              $('.navigation-menu-show3').hide();
+
+            $('.menu-item3').click(function () {
+              $('.navigation-menu-show3').slideToggle("");
+            });
+            });
+            
+
+            $(document).ready(function() {
+              // Hide the div when the page loads
+              $('.navigation-menu-show4').hide();
+              
+            $('.menu-item4').click(function () {
+              $('.navigation-menu-show4').slideToggle("");
+            });
+            });
+
 
           
         })
