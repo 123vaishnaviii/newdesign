@@ -1202,14 +1202,16 @@ font-family: 'Assistant', sans-serif;
         height: 250px;
     }
     .part11 h1{
+        text-align: center;
         font-size: 24px;
-        padding-left: 60px;
+        padding-left: 16px;
         padding-right: 20px;
     }
     
     .part11 p{
         color: gray;
         font-size: 12px;
+        text-align: center;
     }
     .part11{
         padding: 30px;
@@ -1217,9 +1219,10 @@ font-family: 'Assistant', sans-serif;
     }
     .btn{
         background-color: rgb(51, 144, 100);
-        padding: 7px 13px;
+        padding: 5px 13px;
         border: none;  
-        color: white;     
+        color: white;   
+        align-items: center;  
     }
     .bsecond{
         /* padding-top: 80px; */
