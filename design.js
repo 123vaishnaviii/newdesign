@@ -263,6 +263,8 @@
               div.animate({  left: div.css('left') === '0px' ? '-450px' : '0px'
             }, "");
             });
+
+          
         })
 
         
