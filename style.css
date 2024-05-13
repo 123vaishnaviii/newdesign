@@ -1,13 +1,14 @@
 *{margin: 0px;
 padding: 0;
 box-sizing: border-box;
+font-family: sans-serif;
 }
 .main-body{
     overflow-x: hidden;
 }
 .main-header{
     background-color :rgb(20, 148, 92);
-    height: 26px;
+    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,14 +28,20 @@ box-sizing: border-box;
 }
 .fontfamily{
     font-weight: normal;
-    font-family:sans-serif ;
 }
 .nav-div{
+    padding-left: 45px;
+    padding-right: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* justify-content: space-around; */
-    max-height: 130px;
+    max-height: 190px;
+ }
+ .nav-div-fist{
+    display: flex;
+    gap: 30px;
+    align-items: center;
  }
 
  .imgg{
@@ -57,14 +64,13 @@ box-sizing: border-box;
     color: grey;
     text-decoration: none;
     padding:18px;
-    font-size: 13px;
-    font-family:sans-serif;
-    
+    font-size: 13px;      
 }
 .searchicon{
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    gap: 28px;
+    /* justify-content: center; */
     /* margin-left: 500px; */
     /* padding: 50px; */
     
@@ -103,7 +109,7 @@ box-sizing: border-box;
 .part11{
     /* background-color: yellow; */
     padding: 50px;
-    font-family:sans-serif;
+    
     font-weight: normal;
     display: flex;
     flex-direction: column;
@@ -125,7 +131,7 @@ box-sizing: border-box;
     background-color: rgb(43, 136, 92);
     padding: 16px 27px;
     border: none;
-    font-family:sans-serif;
+    
     color: white;
 
  
@@ -163,7 +169,6 @@ box-sizing: border-box;
 
 .bdyhead2 h2{
     font-weight: normal;
-    font-family: sans-serif;
 }
 .pbtn-div{
     display: flex;
@@ -176,7 +181,6 @@ box-sizing: border-box;
     background-color: rgb(43, 136, 92);
     padding: 16px 27px;
     border: none;
-    font-family:sans-serif;
     color: white;
     /* margin-left: 650px; */
 }
@@ -195,7 +199,6 @@ box-sizing: border-box;
     font-size: 24px;
     align-items: center;
     /* padding-top: 19px; */
-    font-family: sans-serif;
     font-weight: normal;
     display: flex;
     justify-content: center;
@@ -218,6 +221,9 @@ box-sizing: border-box;
     position: absolute;
     padding-top: -10px;
 } */
+.bsecond{
+    padding: 38px;
+}
 .second-product-collection{
     /* overflow-x: hidden; */
     display: flex;
@@ -239,7 +245,6 @@ box-sizing: border-box;
     height: 70px;
     font-size: 21px;
     font-weight: normal;
-    font-family: sans-serif;
     color: gray;
     /* margin-top: 90px; */
     /* padding-top: 39px; */
@@ -249,7 +254,6 @@ box-sizing: border-box;
     padding: 5px;
 }
 .second-product-listp1{
-    font-family: sans-serif;
     font-size: 13px;
     
 }
@@ -294,27 +298,23 @@ box-sizing: border-box;
 
 .bfourth-right-part-content p{
     color: gray;
-    font-family: sans-serif;
     font-size: 14px;
     line-height: 1.9;
 
 }
 .bfourth-right-part-content li{
     color: gray;
-    font-family: sans-serif;
     padding: 6px;
     font-size: 14px;
 }
 .bfourth-right-part-content h1{
     font-weight: normal;
     font-size: 40px;
-    font-family: sans-serif;
 
 }
 .bfourth-right-part-content-btn{
     cursor: pointer;
     color: green;
-    font-family: sans-serif;
     padding: 17px;
     margin: 12px;
     background-color: white;
@@ -322,7 +322,6 @@ box-sizing: border-box;
 }
 .bfifth-part1-vedio h2{
     font-size: 26px;
-    font-family: sans-serif;
     color:rgb(18, 17, 17);
     font-weight: normal;
     padding: 10px;
@@ -343,7 +342,6 @@ box-sizing: border-box;
 }
 .bfifth-part2-logos h2{
     font-size: 26px;
-    font-family: sans-serif;
     color:rgb(81, 78, 78);
     font-weight: normal;
     padding: 10px;
@@ -402,14 +400,12 @@ box-sizing: border-box;
 }
 .sixth-left-part-content h1{
     font-weight: normal;
-    font-family: sans-serif;
     font-size: 40px;
 }
 .sixth-left-part-content p{
     color: gray;
     font-size: 17px;
     line-height: 1.6;
-    font-family: sans-serif;
 }
 .bsixth-left-part-btn{
     cursor: pointer;
@@ -432,7 +428,6 @@ box-sizing: border-box;
 }
 .bseventh h2{
     font-weight: normal;
-    font-family: sans-serif;
     font-size: 40px;   
 }
 
@@ -460,7 +455,6 @@ box-sizing: border-box;
 }
 .beigth h2{
     font-weight: normal;
-    font-family: sans-serif;
     font-size: 24px;
     color: rgb(61, 60, 60);
     text-align: center;
@@ -496,13 +490,11 @@ box-sizing: border-box;
 .beigth-right-part-content h3{
     font-weight: normal;
     font-size: 26px;
-    font-family: sans-serif;
 }
 .beigth-right-part-content-p-ul {
     color: rgb(105, 104, 104);
     line-height: 2;
     font-size: 15px;
-    font-family: sans-serif;
 }
 .beigth-right-part-content-btn{
     cursor: pointer;
@@ -529,7 +521,6 @@ box-sizing: border-box;
 }
 .bninth h2{
     font-size: 25px;
-    font-family: sans-serif;
     font-weight: normal;
     color: rgb(76, 75, 75);
     /* margin-top: 90px; */
@@ -567,13 +558,13 @@ box-sizing: border-box;
     font-size: 10px;
     color:black;
     /* margin-left: 20px; */
-    font-family: sans-serif;
+    
 }
 .bninth-parent-div-p2{
     font-size: 15px;
     color: rgb(92, 88, 88);
     /* margin-left: 20px; */
-    font-family: sans-serif;
+    
     line-height: 1.6;
 }
 .bninth-btn-div{
@@ -624,12 +615,12 @@ box-sizing: border-box;
 }
 .bfinal-part1-div h3{
 
-    font-family: sans-serif;
+    
     font-weight: normal;
     color: rgb(65, 64, 64);
 }
 .bfinal-part1-div li{
-    font-family: sans-serif;
+    
     font-size: 14px;
     color: rgb(152, 152, 152);
     line-height: 2.9;
@@ -647,8 +638,10 @@ box-sizing: border-box;
 .bfinal-part1-logoicon{
     /* padding: 20px; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
 
 }
 .bfinal-part1-logoicon li{
@@ -672,12 +665,12 @@ box-sizing: border-box;
 .bfinal-part2-btn{
     cursor: pointer;
     padding: 13px 10px;
-    font-family: sans-serif;
+    
     font-size: 12px;
     color: rgb(49, 48, 48);
 }
 .bfinal-part2 p{
-    font-family: sans-serif;
+    
     font-size: 13px;
     color: rgb(152, 152, 152);
 
@@ -689,13 +682,13 @@ box-sizing: border-box;
     justify-content: left;
 }
 .bfinal-part2-footer p{
-    font-family: sans-serif;
+    
     font-size: 10px;
 }
 .bfinal-part2-footer li{
     list-style-type: none;
     display: inline-block;
-    font-family: sans-serif;
+    
     font-size: 10px;
     color:rgb(152, 152, 152) ;
 
@@ -704,7 +697,7 @@ box-sizing: border-box;
     text-decoration: none;
     color: rgb(152, 152, 152);
     font-size: 12px;
-    font-family: sans-serif;
+    
     padding: 16px;
 }
 .bfinal-part2-footer li a:hover{
@@ -764,13 +757,16 @@ box-sizing: border-box;
 }
 .collection-items h1{
     font-weight: normal;
-    font-family: sans-serif;
+    
     padding: 10px;
     /* font-size: 39px; */
 }
 .collection-img:hover{
     transform: scale(1.02);
+}
 
+.login{
+    display: none;
 }  
 
 
@@ -787,11 +783,15 @@ box-sizing: border-box;
     .nav-div{
         width: 100%;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         /* justify-content:center; */
         justify-content:space-around;
         justify-content: space-between;
         /* max-height: 130px; */
+    }
+    .nav-div-fist{
+        justify-content: center;
+
     }
     .menu-icon{
         display: block;
@@ -799,8 +799,9 @@ box-sizing: border-box;
     .menu-list{                          /*hide that ul list*/
         display: none;
     }
+    
     .menu-item-list{
-        font-family: sans-serif;
+        
         font-size: 17px;
         width: 100%;
         display: flex;
@@ -842,7 +843,7 @@ box-sizing: border-box;
         background-color: rgb(87, 166, 129);
         padding: 10px 20px;
         border: none;
-        font-family:sans-serif;
+        
         color: white;
         /* margin-left: 650px; */
     }
@@ -881,6 +882,11 @@ box-sizing: border-box;
 
         /* overfow-x: hidden; */
     } 
+    .searchicon{
+        cursor: pointer;
+        display: flex;
+        gap: 7px;
+    }
     .prdct-list-screen990{
         display: flex;
         /* padding: 19px; */
@@ -911,7 +917,7 @@ box-sizing: border-box;
         /* font-size: 20px; */
         align-items: center;
         /* padding-top: 20px; */
-        font-family: sans-serif;
+        
         font-weight: normal;
         display: flex;
         justify-content: center;
@@ -947,14 +953,14 @@ box-sizing: border-box;
     }
     .sixth-left-part-content h1{
         font-weight: normal;
-        font-family: sans-serif;
+        
         font-size: 30px;
     }
     .sixth-left-part-content p{
         color: gray;
         font-size: 14px;
         line-height: 1.6;
-        font-family: sans-serif;
+        
     }
     .bsixth-left-part-btn{
         color: white;
@@ -993,7 +999,7 @@ box-sizing: border-box;
         text-decoration: none;
         color: rgb(152, 152, 152);
         font-size: 10px;
-        font-family: sans-serif;
+        
         padding: 6px;
     }
     .bninth-parent-screen990{
@@ -1025,6 +1031,24 @@ box-sizing: border-box;
     /* .second-product-collection{
         overflow-x: hidden;
     } */
+    .bi-person{
+        display: none;
+    }
+    .login{
+        padding: 20px;
+        display: block;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .searchicon{
+    gap: 10px;
+
+    }
+    .nav-div-fist{
+        gap: 0px;
+    
+     }
     .bfirst{
         display: flex;
         flex-direction: column;
@@ -1044,8 +1068,7 @@ box-sizing: border-box;
     .btn{
         background-color: rgb(51, 144, 100);
         padding: 7px 13px;
-        border: none;
-        font-family:sans-serif;
+        border: none;  
         color: white;     
     }
     .image{
@@ -1079,7 +1102,7 @@ box-sizing: border-box;
         height: 10px;
         font-size: 18px;
         font-weight: normal;
-        font-family: sans-serif;
+        
         color: gray;
     }
     .bfourth{
@@ -1097,19 +1120,19 @@ box-sizing: border-box;
     }
     .bfourth-right-part-content li{
         color: gray;
-        font-family: sans-serif;
+        
         /* padding: 6px; */
         font-size: 11px;
     }
     .bfourth-right-part-content h1{
         font-weight: normal;
         font-size: 30px;
-        font-family: sans-serif;
+        
     
     }
     .bfourth-right-part-content-btn{
         color: green;
-        font-family: sans-serif;
+        
         padding: 9px;
         /* margin: 8px; */
         background-color: white;
@@ -1152,7 +1175,7 @@ box-sizing: border-box;
     }
     .sixth-left-part-content-screen990 h1{
         font-weight: normal;
-        font-family: sans-serif;
+        
         font-size: 30px;
     }
     
@@ -1160,7 +1183,7 @@ box-sizing: border-box;
         color: gray;
         font-size: 17px;
         line-height: 1.6;
-        font-family: sans-serif;
+        
 
     }
 
@@ -1173,7 +1196,7 @@ box-sizing: border-box;
     }
     .bseventh h2{
         font-weight: normal;
-        font-family: sans-serif;
+        
         font-size: 28px;   
     }
     .beigth-body{
@@ -1203,7 +1226,7 @@ box-sizing: border-box;
     .beigth-right-part-content h3{
         font-weight: normal;
         font-size: 20px;
-        font-family: sans-serif;
+        
     }
     .beigth-right-part-content-btn{
     
@@ -1234,7 +1257,7 @@ box-sizing: border-box;
         padding-top: 19px;
         /* margin-left: 40px; */
         font-size: 14px;
-        font-family: sans-serif;
+        
         font-weight: normal;
         color: rgb(65, 64, 64);
     }
