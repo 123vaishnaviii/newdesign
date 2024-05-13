@@ -8,7 +8,7 @@ font-family: sans-serif;
 }
 .main-header{
     background-color :rgb(20, 148, 92);
-    height: 38px;
+    min-height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
