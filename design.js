@@ -272,7 +272,7 @@
             $('.menu-item1').click(function () {
               $('.navigation-menu-show').slideToggle("");
             });
-          });
+            });
 
 
             $(document).ready(function() {
@@ -303,6 +303,23 @@
               $('.navigation-menu-show4').slideToggle("");
             });
             });
+
+
+              $(document).ready(function() {
+                // Hide the div when the page loads
+                $('.dropdown-menu-div').hide();
+  
+              $('.dropdown-toggle').click(function () {
+                $('.dropdown-menu-div').slideToggle("");
+              });
+              });
+
+
+            
+          
+
+
+            
 
 
           

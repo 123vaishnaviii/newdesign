@@ -798,9 +798,10 @@ font-family: 'Assistant', sans-serif;
 .bfinal-part2{
     height: 160px;
     padding: 13px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    /* align-items:flex-start; */
     /* padding: 50px; */
     /* height: 60px;    */
 }
@@ -819,13 +820,13 @@ font-family: 'Assistant', sans-serif;
 }
 
 .bfinal-part2-footer{
-    padding: 17px;
+    padding: 20px;
     display: flex;
     justify-content: left;
 }
 .bfinal-part2-footer p{
     
-    font-size: 10px;
+    font-size: 12px;
 }
 .bfinal-part2-footer li{
     list-style-type: none;
@@ -854,22 +855,27 @@ font-family: 'Assistant', sans-serif;
     color: rgb(133, 133, 133);
 
 }
-.list-show{
-    left: -200PX;
-    position: absolute;
-    z-index: 1;
-    height: 100px;
-    display: block;
-    width: 200px;
-    margin-top: 60px;
-    margin-left: 13px;
-    padding: 10px;
-    background-color:  rgb(243, 236, 243);
-    border: 1px solid rgb(192, 189, 189);
+.dropdown-toggle{
+    border:1px solid black;
+    background: none;
+    color: black;
 }
-.list-show a{
+.dropdown-item{
+    color: rgb(137, 135, 135);
     text-decoration: none;
+    font-size: 14px;
 }
+.dropdown-menu li{
+    list-style-type: none;
+    padding: 5px;  
+}
+.dropdown-menu-div{
+    padding: 10px;
+    margin-top: 10px;
+    width: 197px;
+    border: 1px solid rgb(106, 104, 104);
+}
+
 
 
 /*this style section on collection page*/
@@ -909,7 +915,7 @@ font-family: 'Assistant', sans-serif;
 
 .login{
     display: none;
-}  
+} 
 
 
 @media(max-width:1024px) {
